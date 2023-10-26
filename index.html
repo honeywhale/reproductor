@@ -4,47 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The House</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="shortcut icon" href="12009967.webp" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Overlock:ital,wght@0,900;1,900&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Overlock:ital,wght@0,900;1,900&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
- <body>
-    <div class="container">
-     <header class="header">
- <nav>
-    <img src="The House.png" alt="logo the House">
-<img src="Group 26.png" alt="lonuevoenmusica">
-<img src="a continuacion.png" alt="siguiente musica">
-<section class="vinil grande">
-    <img src="aurora vinil grande.png" alt="vinil con foto aurora" srcset="">
-    <img src="Group 29.png" alt="musica siguiente" srcset="">
-</section>
- </nav> 
-    </header>
-    <main>
- <aside>
-    <img src="playlist.png" alt="playlist">
- </aside>
-<section class="donde vendria la musica">
-   <h1>Lo más escuchado</h1> 
+ <body class="h-screen overflow-hidden flex flex-col justify-between">
+    <div class="container w-full flex h-full">
+    
+        <header class="header w-1/4">
+            <nav>
+                <img src="The House.png" alt="logo the House">
+                <img src="Group 26.png" alt="lonuevoenmusica">
+                <img src="a continuacion.png" alt="siguiente musica">
+                <section class="vinil grande">
+                    <img src="aurora vinil grande.png" alt="vinil con foto aurora" srcset="">
+                    <img src="Group 29.png" alt="musica siguiente" srcset="">
+                </section>
+            </nav> 
+        </header>
 
-</section>
- </div>
-    </main>
+        <main class="w-3/4 h-full">
+            <aside>
+                <img src="playlist.png" alt="playlist">
+            </aside>
+            <h1>Lo más escuchado</h1> 
+            <section class="h-full overflow-scroll grid grid-cols-2" id="track-list">
+
+            </section>
+        </main>
+    </div>
  
-<head>
-<footer>
-    <!-- controles de la música-->
-    <img src="" alt="" id="front">
-    <audio src="" controls id="audio" autoplay></audio>
-    <img src="like.png" alt="boton de me gusta" srcset="">
-    <img src="agregar a playlist.png" alt="" srcset="">
-</footer>
-</head>
-<script src="/scrip.js"></script>
-<script src="style.css"></script>
+    <footer class="flex justify-center sticky bottom-0 bg-white h-20">
+        <!-- controles de la música-->
+        <img src="" alt="" id="front" class="h-full">
+        <audio src="" controls id="audio" autoplay></audio>
+        <img src="like.png" alt="boton de me gusta" srcset="">
+        <img src="agregar a playlist.png" alt="" srcset="">
+    </footer>
+    <script src="/scrip.js"></script>
 </body> 
 </html>
