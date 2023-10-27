@@ -10,12 +10,12 @@ fetch('https://leonardoapi.onrender.com/music')
 
         let div = document.createElement('div')
         div.classList.add(
-            'hover:bg-gray-700',
+            'hover:bg-red-700',
             'delay-50',
             'duration-100',
-            'bg-gray-800',
+            'bg-white-800',
             'p-5',
-            'rounded-lg',
+            'rounded-lg' ,
             'w-60',
             'group'
         )
@@ -23,8 +23,8 @@ fetch('https://leonardoapi.onrender.com/music')
         div.innerHTML += `
         
             <img class="w-full rounded shadow" src="${song.path.front}" >
-            <h4 class="text-gray-200 font-bold mt-5">${song.title}</h4>
-            <h5  class="text-gray-400 font-light mt-2 text-xs">${song.author}</h5>
+            <h4 class="textred-250 font-bold mt-5">${song.title}</h4>
+            <h5  class="text-red-20 font-light mt-2 text-xs">${song.author}</h5>
             
 
         `
